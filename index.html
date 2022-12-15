@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Voter Eligibility Checker</title>
+</head>
+<body>
+    <header>
+        <h1>Voter Eligibility Checker</h1>
+    </header>
+
+    <main>
+        <label for="name">Name of Citizen</label>
+        <br />
+        <input type="text" class="nameInput" name="name" id="name" />
+        <br />
+        
+        <label for="yob">Year of Birth</label>
+        <br />
+        <input type="number" name="yob" id="yob" />
+
+        <br />
+        <button id="check" onclick="check()">Check</button>
+
+        <p class="message" id="message"></p>
+        <p class="messageRed" id="messageRed"></p>
+    </main>
+    <footer><small>&copy;2022. Developed by Nimi.</small></footer>
+    <script src="script.js"></script>
+</body>
+</html>
